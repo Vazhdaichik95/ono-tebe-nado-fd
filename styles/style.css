@@ -1,1 +1,35 @@
 /* место для вашего кода */
+.content-section_theme {
+  background-color: #fff;
+  color: #000;
+}
+
+.header {
+  border: 1px solid #f0f;
+  padding: 0 50px;
+}
+
+.cover {
+  background-image: url(/images/cover.jpg);
+  background-repeat: no-repeat;
+  background-size: 120% auto;
+  background-position: top center;
+  color: #fff;
+  padding: 165px 50px 50px;
+  border: 1px solid #ff0;
+}
+
+.lots {
+  margin: 180px 24px 0 24px;
+  border: 1px solid #f00;
+}
+
+.about {
+  margin: 120px 24px 0 24px;
+  border: 1px solid #0f0;
+}
+
+.footer {
+  margin: 180px 24px 0 24px;
+  border: 1px solid #00f;
+}
