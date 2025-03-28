@@ -2,21 +2,101 @@
 .content-section_theme {
   background-color: #fff;
   color: #000;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24.3px;
 }
 
 .header {
-  border: 1px solid #f0f;
-  padding: 0 50px;
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  padding: 92px 50px 96px;
+}
+
+.header-menu-list {
+  display: flex;
+  gap: 32px;
+}
+
+.header-menu-list-item {
+  list-style: circle;
+}
+
+.header-menu-list-item-no-bullit {
+  list-style: none;
+}
+
+.header-menu-link {
+  text-decoration: underline;
+}
+
+.header-menu-link-active {
+  text-decoration: none;
+}
+
+.header-logo {
+  display: block;
+}
+
+.header-logo-image {
+  width: 148px;
+  height: 105px;
+}
+
+.address {
+  font-style: normal;
+  min-width: 240px;
+}
+
+.header-address {
+  justify-self: end;
 }
 
 .cover {
-  background-image: url(/images/cover.jpg);
+  position: relative;
+  background-image: url("../images/cover.jpg");
   background-repeat: no-repeat;
-  background-size: 120% auto;
+  background-size: 125% auto;
   background-position: top center;
   color: #fff;
   padding: 165px 50px 50px;
   border: 1px solid #ff0;
+  z-index: 0;
+}
+
+.overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  z-index: -1;
+}
+
+.cover-title {
+  z-index: 2;
+  font-weight: bold;
+  font-size: 100px;
+  letter-spacing: 30px;
+  line-height: 115px;
+  text-transform: uppercase;
+}
+
+.accent-span {
+  display: block;
+}
+
+.text-center {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.text-right {
+  margin-top: 20px;
+  text-align: right;
 }
 
 .lots {
@@ -27,6 +107,10 @@
 .about {
   margin: 120px 24px 0 24px;
   border: 1px solid #0f0;
+}
+
+.about-logo {
+  background-color: #000;
 }
 
 .footer {
