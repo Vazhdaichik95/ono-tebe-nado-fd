@@ -61,7 +61,6 @@
   background-position: top center;
   color: #fff;
   padding: 165px 50px 50px;
-  border: 1px solid #ff0;
   z-index: 0;
 }
 
@@ -80,13 +79,15 @@
   z-index: 2;
   font-weight: bold;
   font-size: 100px;
-  letter-spacing: 30px;
   line-height: 115px;
   text-transform: uppercase;
+  letter-spacing: 30px;
 }
 
 .accent-span {
   display: block;
+  width: 100%;
+
 }
 
 .text-center {
@@ -97,6 +98,10 @@
 .text-right {
   margin-top: 20px;
   text-align: right;
+}
+
+.last-letter {
+  letter-spacing: normal;
 }
 
 .lots {
