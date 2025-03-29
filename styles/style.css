@@ -11,20 +11,24 @@
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  padding: 92px 50px 96px;
+  padding: 96px 50px 96px;
 }
 
 .header-menu-list {
   display: flex;
-  gap: 32px;
+  justify-content: flex-start;
+  gap: 29px;
 }
 
 .header-menu-list-item {
   list-style: circle;
+  padding-left: 2.5px;
 }
 
 .header-menu-list-item-no-bullit {
   list-style: none;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .header-menu-link {
@@ -37,9 +41,6 @@
 
 .header-logo {
   display: block;
-}
-
-.header-logo-image {
   width: 148px;
   height: 105px;
 }
@@ -62,6 +63,7 @@
   color: #fff;
   padding: 165px 50px 50px;
   z-index: 0;
+  min-height: 757px;
 }
 
 .overlay {
@@ -104,9 +106,67 @@
   letter-spacing: normal;
 }
 
+.cover-description {
+  margin-top: 106px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cover-description-text {
+  text-transform: uppercase;
+  font-size: 22px;
+}
+
+/*Задаем расстояние между словами -> по макету в строке идут расстояния 90-80-110-80-90-80% .
+Соответственно для всей строки задаем расстояние 22px*80%=17.6px
+Далее задаем расстояние 22px*90%=19.8px
+Далее задаем расстояние 22px*110%=24.2px*/
+
+.common-space {
+  word-spacing: 17.6px;
+}
+
+.space-ninety {
+  word-spacing: 19.8px;
+}
+
+.space-onehundred-ten {
+  word-spacing: 24.2;
+}
+
+.cover-description-button {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 13px 32px 12px 31px;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
 .lots {
   margin: 180px 24px 0 24px;
   border: 1px solid #f00;
+}
+
+.section-header {
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.lots-header {
+  margin-left: 40px;
+}
+
+.lots-card-list {
+  margin-top: 27px;
+  list-style: none;
+}
+
+.lots-card-list-item {
+  width: 334px;
+  min-height: 596px;
 }
 
 .about {
