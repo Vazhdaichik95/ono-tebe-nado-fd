@@ -10,7 +10,7 @@
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  padding: 95px 50px 97px;
+  padding: 92px 50px 96px;
 }
 
 .header-menu-list {
