@@ -1,10 +1,9 @@
 /* место для вашего кода */
 .content-section_theme {
-  background-color: #fff;
   color: #000;
   font-weight: normal;
   font-size: 18px;
-  line-height: 24.3px;
+  background-color: #fff;
 }
 
 .header {
@@ -17,18 +16,18 @@
 .header-menu-list {
   display: flex;
   justify-content: flex-start;
-  gap: 29px;
+  gap: 30px;
 }
 
 .header-menu-list-item {
-  list-style: circle;
   padding-left: 2.5px;
+  list-style: circle;
 }
 
 .header-menu-list-item-no-bullit {
-  list-style: none;
-  padding-left: 0;
   padding-right: 0;
+  padding-left: 0;
+  list-style: none;
 }
 
 .header-menu-link {
@@ -45,9 +44,14 @@
   height: 105px;
 }
 
+.header-logo-image {
+  height: 105px;
+}
+
 .address {
-  font-style: normal;
   min-width: 240px;
+  font-style: normal;
+  line-height: 24.3px;
 }
 
 .header-address {
@@ -56,25 +60,25 @@
 
 .cover {
   position: relative;
-  background-image: url("../images/cover.jpg");
-  background-repeat: no-repeat;
-  background-size: 124% 100%;
-  background-position: top center;
-  color: #fff;
-  padding: 165px 50px 50px;
   z-index: 0;
   min-height: 757px;
+  padding: 165px 50px 50px;
+  color: #fff;
+  background-image: url("../images/cover.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 124% 100%;
 }
 
 .overlay {
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.6);
   top: 0;
   left: 0;
+  z-index: -1;
   width: 100%;
   height: 100%;
   opacity: 1;
-  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .cover-title {
@@ -82,8 +86,8 @@
   font-weight: bold;
   font-size: 100px;
   line-height: 115px;
-  text-transform: uppercase;
   letter-spacing: 30px;
+  text-transform: uppercase;
 }
 
 .accent-span {
@@ -107,15 +111,15 @@
 }
 
 .cover-description {
-  margin-top: 106px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 106px;
 }
 
 .cover-description-text {
-  text-transform: uppercase;
   font-size: 22px;
+  text-transform: uppercase;
 }
 
 /*Задаем расстояние между словами -> по макету в строке идут расстояния 90-80-110-80-90-80% .
@@ -136,12 +140,12 @@
 }
 
 .cover-description-button {
-  background-color: transparent;
-  color: #fff;
   border: 1px solid #fff;
-  padding: 13px 32px 12px 31px;
+  padding: 12px 32px 11px 31px;
+  color: #fff;
   font-size: 22px;
   text-transform: uppercase;
+  background-color: transparent;
 }
 
 .lots {
@@ -150,8 +154,8 @@
 
 .section-header {
   display: block;
-  font-size: 40px;
   font-weight: bold;
+  font-size: 40px;
   text-transform: uppercase;
 }
 
@@ -162,8 +166,8 @@
 
 .lots-card-list {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
   row-gap: 25px;
   margin-top: 27px;
   margin-bottom: 30px;
@@ -187,28 +191,28 @@
 .card-type-film {
   background-image: url("../images/card-lot-01.jpg");
   background-repeat: no-repeat;
-  background-size: 162% 100%;
   background-position: center center;
+  background-size: 162% 100%;
 }
 
 .card-type-book {
   background-image: url("../images/card-lot-02.jpg");
   background-repeat: no-repeat;
-  background-size: 162% 100%;
   background-position: center center;
+  background-size: 162% 100%;
 }
 
 .card-type-picture {
   background-image: url("../images/card-lot-03.jpg");
   background-repeat: no-repeat;
-  background-size: 168% 100%;
   background-position: center center;
+  background-size: 168% 100%;
 }
 
 .card-link {
   height: 100%;
-  text-decoration: none;
   color: #fff;
+  text-decoration: none;
 }
 
 .card {
@@ -216,37 +220,97 @@
 }
 
 .card-title {
-  font-size: 22px;
-  text-transform: uppercase;
-  text-decoration: underline;
-  line-height: 120%;
   font-weight: bold;
+  font-size: 22px;
+  line-height: 120%;
+  text-decoration: underline;
+  text-transform: uppercase;
 }
 
 .card-text {
-  font-size: 20px;
   font-weight: normal;
+  font-size: 20px;
   line-height: 120%;
 }
 
 .lots-look-more-link {
-  font-size: 20px;
   margin-left: 40px;
+  font-size: 20px;
 }
 
 .about {
   display: grid;
   grid-template-columns: 334px 1fr;
-  gap: 72px;
+  gap: 25px;
   margin: 120px 24px 0 24px;
-  border: 1px solid #0f0;
 }
 
 .about-logo {
+  display: flex;
+  justify-self: center;
+  justify-content: center;
+  align-content: center ;
+  width: 240px;
+  height: 240px;
+  margin-top: 35px;
+  border-radius: 120px;
+  padding: 63px 46px;
   background-color: #000;
 }
 
+.about-header {
+  margin-top: 136px;
+  margin-bottom: 100px;
+}
+
+.about-text {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.first-paragraph {
+  margin-bottom: 24px;
+}
+
 .footer {
-  margin: 180px 24px 0 24px;
-  border: 1px solid #00f;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: start;
+  margin-top: 180px;
+  padding: 0 50px;
+}
+
+.footer-menu-list {
+  justify-self: center;
+  text-align: center;
+}
+
+.footer-menu-list-item {
+  list-style: none;
+}
+
+.footer-menu-link {
+  text-decoration: underline;
+}
+
+.footer-menu-link-active {
+  text-decoration: none;
+}
+
+.footer-social-list {
+  display: flex;
+  justify-self: end;
+  justify-content: flex-end;
+  gap: 48px;
+  text-align: center;
+}
+
+.footer-social-list-item {
+  list-style: none;
+}
+
+.footer-social-icon {
+  width: 48px;
+  height: 48px;
 }
